@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="sound.css">
+        <!-- integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" /> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- <img src="space.avif" alt=""> -->
+    <div id="sectionHome">
+        <div class="home-container d-flex flex-column justify-content-center">
+            <h1 class="home-heading">Immersed in the
+                <br />Sounds of Space
+            </h1>
+            <div class="d-flex flex-column ">
+                <div class="d-flex flex-row justify-content-end">
+                    <button class="button" onclick="display('sectionList')">Explore</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionList">
+        <div class="list-container">
+            <div class="d-flex flex-column">
+                <div class=" d-flex flex-row justify-content-center">
+                    <div class="card d-flex flex-row" onclick=" display('sectionB') ,playAudio()">
+                        <img src="https://stsci-opo.org/STScI-01F3N9SWJKKYWDHRQZHQA9G02T.png" class="image" />
+                        <p class="paragraph">Flight to AG Carinae</p>
+                        <audio id="myAudio">
+                            <source src="output_audio3 (1).wav" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <script>
+                            function playAudio() {
+                                var audio = document.getElementById("myAudio");
+                                audio.play();
+                            }
+                        </script>
+                    </div>
+                </div>
+
+                <div class=" d-flex flex-row justify-content-center">
+                    <div class="card d-flex flex-row" onclick="display('sectionC'),playAudio()">
+                        <img src="https://stsci-opo.org/STScI-01EVS1GDWBF0A65DXJE96W6SSM.png" class="image" />
+                        <p class="paragraph">Cosmic Reef Visualization</p>
+                        <audio id="myAudio">
+                            <source src="output_audio2.wav" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <script>
+                            function playAudio() {
+                                var audio = document.getElementById("myAudio");
+                                audio.play();
+                            }
+                        </script>
+                    </div>
+                    <div class="card d-flex flex-row" onclick="display('sectionD'),playAudio()">
+                        <img src="https://stsci-opo.org/STScI-01EVS1T25KACYG48KDJSW04GSK.png" class="image" />
+                        <p class="paragraph">Comet 2</p>
+                        <audio id="myAudio">
+                            <source src="output_audio3.wav" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <script>
+                            function playAudio() {
+                                var audio = document.getElementById("myAudio");
+                                audio.play();
+                            }
+                        </script>
+                    </div>
+                </div>
+
+                <div class=" d-flex flex-row justify-content-center">
+                    <div class="card d-flex flex-row" onclick="display('sectionE'),playAudio()">
+                        <img src="https://stsci-opo.org/STScI-01F8DBDDGRRYJQM7JXMYK58JDK.jpg" class="image" />
+                        <p class="paragraph">Saturn and Moons</p>
+                        <audio id="myAudio">
+                            <source src="output_audio4.wav" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <script>
+                            function playAudio() {
+                                var audio = document.getElementById("myAudio");
+                                audio.play();
+                            }
+                        </script>
+                    </div>
+                    <div class="card d-flex flex-row" onclick="display('sectionF'),playAudio()">
+                        <img src="https://stsci-opo.org/STScI-01F8DBHGRQ21KN2209G70BVZA2.jpg" class="image" />
+                        <p class="paragraph">Saturn and Moons(Annotated)</p>
+                        <audio id="myAudio">
+                            <source src="output_audio5.wav" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <script>
+                            function playAudio() {
+                                var audio = document.getElementById("myAudio");
+                                audio.play();
+                            }
+                        </script>
+                    </div>
+                </div>
+
+                <div class=" d-flex flex-row justify-content-center">
+                    <div class="card d-flex flex-row" onclick="display('sectionG'),playAudio()">
+                        <img src="https://stsci-opo.org/STScI-01EVS1ZK0A6ZJXS6NXX8Y4XYV1.png" class="image" />
+                        <p class="paragraph">Flight Through the Orion Nebula in Visible Light</p>
+                        <audio id="myAudio">
+                            <source src="output_audio6.wav" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <script>
+                            function playAudio() {
+                                var audio = document.getElementById("myAudio");
+                                audio.play();
+                            }
+                        </script>
+                    </div>
+                    <div class="card d-flex flex-row" onclick="display('sectionH'),playAudio()">
+                        <img src="https://stsci-opo.org/STScI-01EVS1Y7QM83DRV2N37N80QMEX.png" class="image" />
+                        <p class="paragraph">Flight Through the Orion Nebula in Infrared Light</p>
+                        <audio id="myAudio">
+                            <source src="output_audio7.wav" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <script>
+                            function playAudio() {
+                                var audio = document.getElementById("myAudio");
+                                audio.play();
+                            }
+                        </script>
+                    </div>
+                </div>
+
+                <div class=" d-flex flex-row justify-content-center">
+                    <div class="card d-flex flex-row" onclick="display('sectionI'),playAudio()">
+                        <img src="https://stsci-opo.org/STScI-01EVS20D9TV9DJK5ZGKQ5JS5FJ.png" class="image" />
+                        <p class="paragraph">Rotation of Jupiter</p>
+                        <audio id="myAudio">
+                            <source src="output_audio8.wav" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <script>
+                            function playAudio() {
+                                var audio = document.getElementById("myAudio");
+                                audio.play();
+                            }
+                        </script>
+                    </div>
+                    <div class="card d-flex flex-row" onclick="display('sectionJ'),playAudio()">
+                        <img src="https://stsci-opo.org/STScI-01EVS34DXBXA7093QFZ0G2FVD7.png" class="image" />
+                        <p class="paragraph">Flyby of the Whirlpool Galaxy</p>
+                        <audio id="myAudio">
+                            <source src="output_audio9.wav" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <script>
+                            function playAudio() {
+                                var audio = document.getElementById("myAudio");
+                                audio.play();
+                            }
+                        </script>
+                    </div>
+                </div>
+
+                <div class=" d-flex flex-row justify-content-center">
+                    <div class="card d-flex flex-row" onclick="display('sectionK'),playAudio()">
+                        <img src="https://stsci-opo.org/STScI-01EVS5ZKSYA0BYT0TQYCPYKKQJ.png" class="image" />
+                        <p class="paragraph">Flight Through the Orion Nebula in Visible and Infrared Light(Dome Version)
+                        </p>
+                        <audio id="myAudio">
+                            <source src="output_audio10.wav" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <script>
+                            function playAudio() {
+                                var audio = document.getElementById("myAudio");
+                                audio.play();
+                            }
+                        </script>
+                    </div>
+                    <div class="card d-flex flex-row" onclick="display('sectionL'),playAudio()">
+                        <img src="https://stsci-opo.org/STScI-01EVS4JVSCNTAAXD271JBRT7K8.png" class="image" />
+                        <p class="paragraph">Flight Through the Orion Nebula in Infrared Light(Dome Version)</p>
+                        <audio id="myAudio">
+                            <source src="output_audio11.wav" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <script>
+                            function playAudio() {
+                                var audio = document.getElementById("myAudio");
+                                audio.play();
+                            }
+                        </script>
+                    </div>
+                </div>
+
+                <div class=" d-flex flex-row justify-content-center">
+                    <div class="card d-flex flex-row" onclick="display('sectionM'),playAudio()">
+                        <img src="https://stsci-opo.org/STScI-01EVS3NHRHE7H0XXHB9V3HE7B3.png" class="image" />
+                        <p class="paragraph">Flight Through the Orion Nebula in Visible Light(Dome Version)</p>
+                        <audio id="myAudio">
+                            <source src="output_audio12.wav" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <script>
+                            function playAudio() {
+                                var audio = document.getElementById("myAudio");
+                                audio.play();
+                            }
+                        </script>
+                    </div>
+                    <div class="card d-flex flex-row" onclick="display('sectionN'),playAudio()">
+                        <img src="https://stsci-opo.org/STScI-01EVSBD1H7M9TFW1MAC9M7F3FD.png" class="image" />
+                        <p class="paragraph">Flight Through the Orion Nebula in Infrared Light(360 Video)</p>
+                        <audio id="myAudio">
+                            <source src="output_audio13.wav" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <script>
+                            function playAudio() {
+                                var audio = document.getElementById("myAudio");
+                                audio.play();
+                            }
+                        </script>
+                    </div>
+                </div>
+                <!-- <div class="d-flex flex-row justify-content-center">
+                    <button class="button" onclick="display('sectionHome')">Back</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionA ">
+        <div class="bg-container d-flex flex-column">
+            <img src="https://stsci-opo.org/STScI-01FYVFEPJDREA447YYZA9DAHHP.png" />
+            <button class="button" onclick="display('sectionList')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionB">
+        <div class="bg-container d-flex flex-column justify-content-center">
+            <img src="https://stsci-opo.org/STScI-01F3N9SWJKKYWDHRQZHQA9G02T.png" />
+            <button class="button" onclick="display('sectionList')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionC">
+        <div class="bg-container d-flex flex-column justify-content-center">
+            <img src="https://stsci-opo.org/STScI-01EVS1GDWBF0A65DXJE96W6SSM.png" />
+            <button class="button" onclick="display('sectionList')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionD">
+        <div class="bg-container d-flex flex-column justify-content-center">
+            <img src="https://stsci-opo.org/STScI-01EVS1T25KACYG48KDJSW04GSK.png" />
+            <button class="button" onclick="display('sectionList')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionE">
+        <div class="bg-container d-flex flex-column justify-content-center">
+            <img src="https://stsci-opo.org/STScI-01F8DBDDGRRYJQM7JXMYK58JDK.jpg" />
+            <button class="button" onclick="display('sectionList')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionF">
+        <div class="bg-container d-flex flex-column justify-content-center">
+            <img src="https://stsci-opo.org/STScI-01F8DBHGRQ21KN2209G70BVZA2.jpg" />
+            <button class="button" onclick="display('sectionList')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionG">
+        <div class="bg-container d-flex flex-column justify-content-center">
+            <img src="https://stsci-opo.org/STScI-01EVS1ZK0A6ZJXS6NXX8Y4XYV1.png" />
+            <button class="button" onclick="display('sectionList')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionH">
+        <div class="bg-container d-flex flex-column justify-content-center">
+            <img src="https://stsci-opo.org/STScI-01EVS1Y7QM83DRV2N37N80QMEX.png" />
+            <button class="button" onclick="display('sectionList')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionI">
+        <div class="bg-container d-flex flex-column justify-content-center">
+            <img src="https://stsci-opo.org/STScI-01EVS20D9TV9DJK5ZGKQ5JS5FJ.png" />
+            <button class="button" onclick="display('sectionList')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionJ">
+        <div class="bg-container d-flex flex-column justify-content-center">
+            <img src="https://stsci-opo.org/STScI-01EVS34DXBXA7093QFZ0G2FVD7.png" />
+            <button class="button" onclick="display('sectionList')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionK">
+        <div class="bg-container d-flex flex-column justify-content-center">
+            <img src="https://stsci-opo.org/STScI-01EVS5ZKSYA0BYT0TQYCPYKKQJ.png" />
+            <button class="button" onclick="display('sectionList')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionL">
+        <div class="bg-container d-flex flex-column justify-content-center">
+            <img src="https://stsci-opo.org/STScI-01EVS4JVSCNTAAXD271JBRT7K8.png" />
+            <button class="button" onclick="display('sectionList')">Back</button>
+        </div>
+    </div>
+    <div id="sectionM">
+        <div class="bg-container d-flex flex-column justify-content-center">
+            <img src="https://stsci-opo.org/STScI-01EVS3NHRHE7H0XXHB9V3HE7B3.png" />
+            <button class="button" onclick="display('sectionList')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionN">
+        <div class="bg-container d-flex flex-column justify-content-center">
+            <img src="https://stsci-opo.org/STScI-01EVSBD1H7M9TFW1MAC9M7F3FD.png" />
+            <button class="button" onclick="display('sectionList')">Back</button>
+        </div>
+    </div>
+
+    <script type="text/javascript"
+        src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
